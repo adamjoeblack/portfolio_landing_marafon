@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            background: #fdfdfd;
+        }
+        footer {
+            background: linear-gradient(to bottom ,#fdfdfd,#cecece, #383838);
+        }
+        .header-text {
+            color: #f2c341;
+        }
+        .header-background {
+            background-color: #4d4d4d;
+            background-image: url(img/bg2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+        .quote-bg {
+            background-image: url(img/bg33.jpg);
+            background-position: bottom;
+            background-size: cover;
+            color: #f2c341;
+            margin: 50px 0;
+        }
+        q {
+            font-size: 20px;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .blockcenter {
+            width: 950px;
+            margin: auto;
+        }
+        .margin-header {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .margin-content {
+            padding-top: 0;
+            padding-bottom: 5px;
+        }
+        .margin-quote {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .whitetext {
+            color: white;
+        }
+        .delpoint {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 0;
+        }
+        nav ul, footer ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 10px 40px;
+            padding: 10px;
+            /* cursor: pointer; */
+        } 
+        .ok{
+            list-style: none;
+            padding: 0;
+         }
+         .ok li {
+            background: url(./img/ok.png) no-repeat left center;
+            padding-left: 3.5em;
+            margin-bottom: 20px;
+         }
+         .ok2{
+            list-style: none;
+            padding: 0;
+            line-height: 2.5em;
+            column-count: 2;
+         }
+         .ok2 li {
+             background: url(./img/ok2.png) no-repeat left center;
+             padding-left: 3.5em;
+        }
+        .sk {
+            list-style: none;
+            padding-left: 0;
+        }
+        .sk li{
+            background: url(./img/plus.png) no-repeat left center;
+            background-size: 40px;
+            line-height: 3em;
+            padding-left: 3.5em;
+        }
+        .load dd{
+            margin-left: 0;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: white;
+            border: 1px black solid;
+         }
+        .normal {
+            margin-right: 20%;
+            background-color: #4C4C4C;
+            color: white;
+        }
+        .not-normal {
+            margin-right: 50%;
+            background-color: #4C4C4C;
+            color: white;
+        }
+        .adobe {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .adobe img {
+            margin: 20px;
+            box-shadow: 10px 15px 30px #161616a2;
+        }
+        .border-img {
+            border-radius: 30px;
+        }
+        .border-radius-logo {
+            border-radius: 50%;
+        }
+        .margin-contacts {
+            margin-top: 60px;
+        }
+        .b {
+            font-weight: 700;
+        }
+        h1 {
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+        .logotext {
+            text-transform: uppercase;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .border-bottom {
+            border: #f2c341 solid 2px;
+            border-radius: 10px;
+            padding: 5px 25px;        
+        }
+        p {
+            line-height: 2em;
+        }
+        li a {
+            text-decoration: none;
+            color: #f2c341;
+        }
+        .position-button {
+            position: fixed;
+            bottom: 80px;
+            right: 50px;
+        }
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        #contact-form input, #contact-form textarea {
+            padding: 20px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 700;
+            outline: none;
+            border: 3px solid #161616;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 907px;
+            resize: none;
+        }
+        #contact-form textarea {
+            height: 100px;
+        }
+        input#submit {
+            width: 225px;
+            padding: 15px;
+            cursor: pointer;
+            background: #161616;
+            color: #f2c341;
+            font-size: 25px;
+        }   
+        .logo-container {
+            width: 950px;
+            height: 570px;
+            background-image: url(./img/ava.jpg);
+            background-size: cover;
+            box-shadow: 0px -120px 50px 0px rgba(0, 0, 0, 0.8) inset;
+        } 
+        .text-overlap {
+            position: relative;
+            top: -80px;
+            padding: 0 60px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+        <header class="header-background" id="top">
+            <div class="blockcenter margin-header">
+                <nav>
+                    <ul class="header-text delpoint">
+                        <li><span class="logotext">Данил<br>Гатаулин</span></li>
+                        <li class="border-bottom"><a href="#exp">Опыт Работы</a></д>
+                        <li class="border-bottom"><a href="#ach">Достижения</a></д>
+                        <li class="border-bottom"><a href="#hob">Хобби</a></li>
+                        <li class="border-bottom"><a href="#skills">Навыки</a></li>
+                        <li class="border-bottom"><a href="#cont">Контакт</a></li>
+                    </ul>
+                </nav>
+                <div class="logo-container"></div>
+                <!-- <img src="img/ava.jpg" alt="Картинка" width="100%" class="logo-container"> -->
+                <p class="whitetext text-overlap">Инженер-конструктор. Работаю на электро-генераторном заводе.
+                Привлекает сфера IT, нравится наблюдать результат только что выполненной работы,
+                поэтому решил заняться frontend-ом.
+                </p>
+                <h1 class="whitetext">Юный Frontend-разработчик</h1>
+            </div>
+        </header>
+        <section class="blockcenter margin-content">
+            <h2 id="exp">Опыт работы</h2>
+            <ol class="delpoint">
+                <li><span class="b">2016-2018:</span> кальянщик</li>
+                <li><span class="b">2020-по сегодня:</span> инженер-конструктор</li>
+            </ol>
+        </section>
+        <section class="blockcenter margin-content">
+            <h2 id="ach">Мои достижения</h2>
+            <p>Главные профессиональные достижения за последние годы</p>
+            <ul class="ok">
+                <li><span class="b">Разработка генератора</span><br>Помогал с разработкой генератора большой мощности, 
+                    но при этом он должен был иметь малые габариты</li>
+                <li><span class="b">Служба в ФСБ</span><br>Проходил срочную военную службу в ФСБ</li>
+            </ul>
+        </section> 
+        <section class="blockcenter margin-content"> 
+            <h2>Мои сильные стороны</h2>
+            <ul class="ok2">
+                <li>Стрессоустойчивый</li>
+                <li>Легко обучаюсь</li>
+                <li>Дружелюбный</li>
+                <li>Ответственный</li>
+                <li>Надежный</li>
+            </ul>
+        </section>   
+        <section class="quote-bg">
+            <div class="blockcenter margin-quote">   
+                <h2>Любимая цитата</h2>
+                <p class="italic"><q>Падение, это не провал. Провал - это провал, падение, когда упал.</q></p>
+            </div>
+        </section>
+        <section class="blockcenter margin-content">    
+            <h2 id="hob">Хобби</h2>
+            <p>У меня не так уж и много увлечений, но есть 3 вещи, которые меня привлекают. Свое свободное время я провожу в спорт-зале, либо на стриминговой плащадке Twitch.</p>
+            <p>В спорт-зале больше времени уделяю силовым упражнениям, так-как хочу быть большим и сильным. =)</p>
+            <p>На Twitch я транслирую, как покоряю виртуальный мир в многопользовательской онлайн игре <span class="italic">World of Warcraft</span> и заодно таким образом развиваю коммуникативные навыки.</p>
+            <p style="text-align: center;">
+            <img src="img/twitch.png" alt="Картинка1" width="25%">
+            <img src="img/wow.png" alt="Картинка2" width="25%">
+            <img src="img/sport.png" alt="Картинка3" width="25%">
+            </p>
+        </section>
+        <section class="blockcenter margin-content">
+            <h2 id="skills">Навыки</h2>
+                <p>Знания и навыки, которыми располагаю на данный момент:</p>
+                    <ul class="sk">
+                        <li>Владею фотошопом на базовом уровне</li>
+                        <li>Рисовал в Adobe illustrator</li>
+                        <li>Владею английским на уровне - London the capital of great britain</li>
+                    </ul>
+                <p>Пара моих работ в Adobe illustrator:</p>
+                <div class="adobe">
+                    <img src="./img/logo.png" alt="girl" width="40%" class="border-radius-logo">
+                    <img src="./img/space.jpg" alt="space" width="50%" class="border-img">
+                    <img src="./img/prise.jpg" alt="prise the sun" width="40%" class="border-img">
+                    <img src="./img/girl.jpg" alt="girl" width="40%" class="border-img">
+                </div>
+                <p>Знания языков программирования:</p>
+                    <dl class="load">
+                        <dt class="b">HTML</dt>
+                        <dd><div class="normal">80%</div></dd>
+                        <dt class="b">CSS</dt>
+                        <dd><div class="not-normal">50%</div></dd>
+                        <dt class="b">JavaScript</dt>
+                        <dd><div class="italic">Ожидание загрузки</div></dd>
+                    </dl>
+                    <!-- <ul class="load">
+                        <li class="load-standard"><div class="normal">HTML</div></li>
+                        <li class="load-standard not-normal">CSS</li>
+                        <li class="load-standard not">JS</li>
+                    </ul> -->
+        </section>
+        <footer>
+            <div class="blockcenter margin-content">
+                <h2 id="cont">Контакт</h2>
+                <form action="/" method="POST" id="contact-form">
+                    <input type="text" name="FIO" placeholder="Ф.И.О">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <textarea name="message" placeholder="Сообщение"></textarea>
+                    <input type="submit" value="Отправить" name="submit" id="submit">
+                </form>
+                <a href="#top" class="position-button"><img src="./img/go_to_top_2.png" alt="go_to_top" height="70"></a>
+                <ul class="delpoint margin-contacts">
+                    <li><a href="https://vk.com/adamjoeblack">VK: vk.com/adamjoeblack</a></li>
+                    <li><a href="mailto:AdamJoeBlvck@mail.ru">E-mail: AdamJoeBlvck@mail.ru</a></li>
+                    <li><a href="mailto:AdamJoeBlvck@gmail.com">G-mail: AdamJoeBlvck@gmail.com</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
